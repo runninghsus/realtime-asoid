@@ -186,7 +186,8 @@ def bsoid_extract_numba(data, fps):
 def feature_extraction(train_datalist, num_train, framerate=120):
     f_integrated = []
     data_list = List()
-    for i in notebook.tqdm(range(num_train)):
+    # for i in notebook.tqdm(range(num_train)):
+    for i in range(num_train):
         data_list.append(train_datalist[i])
         binned_features = bsoid_extract_numba(data_list, framerate)
         f_integrated.append(binned_features[0])  # getting only the non-shifted

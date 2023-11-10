@@ -160,4 +160,5 @@ cython_debug/
 .idea/
 videos/*.mp4
 videos/*.avi
+experiments/*
 

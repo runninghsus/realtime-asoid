@@ -9,8 +9,8 @@ ipython
 ```
 
 ```python
-import deeplabcutcore as deeplabcut
 import tensorflow as tf
+import deeplabcutcore as deeplabcut
 config_path = r'D:\bottomup_clear-hsu-2021-09-21\config.yaml'
 video_path = [r'C:\Users\jimi\Documents\GitHub\realtime-asoid\videos\video_1.mp4']
 deeplabcut.analyze_videos(config_path, videos=video_path, save_as_csv=True)
